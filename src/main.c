@@ -11,7 +11,7 @@ int main()
 
     for(j=0;j<=8;j++)
     {   
-        printf("Selecione uma posição de 1 a 9 para fazer a jogada (%c):\n",((last=='x')?'o':'x'));
+        printf("Selecione uma posiÃ§Ã£o de 1 a 9 para fazer a jogada (%c):\n",((last=='x')?'o':'x'));
         scanf("%d",&i);
         i-=1;
         printf("\n");
@@ -34,7 +34,7 @@ int main()
                     ||(l[2]==l[5] && l[2]==l[8] && l[2]=='x')
                     ||(l[6]==l[7] && l[6]==l[8] && l[6]=='x'))
                 {
-                printf("O vencedor é X.\n");
+                printf("O vencedor Ã© X.\n");
                 return 0;
                 }
 
@@ -46,7 +46,7 @@ int main()
                     ||(l[2]==l[5] && l[2]==l[8] && l[2]=='o')
                     ||(l[6]==l[7] && l[6]==l[8] && l[6]=='o'))
                 {
-                printf("O vencedor é o.\n");
+                printf("O vencedor Ã© o.\n");
                 return 0;
                 }
                 last=l[i];
@@ -54,13 +54,13 @@ int main()
 
             else
             {
-                printf("Apenas posições de 0 a 8 são aceitas.\n\n");
+                printf("Apenas posiÃ§Ãµes de 0 a 8 sÃ£o aceitas.\n\n");
                 j--;
             }
         }
         else
         {
-            printf("Essa posição já está ocupada.\n\n");
+            printf("Essa posiÃ§Ã£o jÃ¡ estÃ¡ ocupada.\n\n");
             j--;
         }
     }   
